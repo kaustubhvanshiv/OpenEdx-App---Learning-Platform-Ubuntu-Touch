@@ -80,10 +80,11 @@ Both toolkits provide responsive, native-style UI components suitable for Lomiri
 This app bridges the gap between open education and open-source mobile platforms, giving Ubuntu Touch/Lomiri users the power to learn anytime, anywhere. It extends Open edX’s mission of democratizing education while showcasing how open-source tools can empower both developers and learners.
 
 👥 Contributors
-[Kaustubh Vanshiv] – Developer
-[Jay Dhakad] - Developer
-[Zuzahain Inamdar] - Developer
-[Kanchana Gaira] - Developer
+- [Kaustubh Vanshiv] – Developer
+- [Jay Dhakad] - Developer
+- [Zuzahain Inamdar] - Developer
+- [Kanchana Gaira] - Developer
+
 Open Source Community
 
 **Project Guide: 
@@ -91,18 +92,18 @@ Dr. Prof. Ishwari Raskar**
 
 *Project Folder Structure:*
 
-├── assets/ # Logos and images
-├── build/ # Auto-generated build files (ignored in repo)
-├── po/ # Localization files
-├── qml/ # UI components and logic
-│ ├── components/ # Reusable QML components (CourseCard, CourseList, etc.)
-│ ├── js/ # API, authentication, and storage scripts
-│ ├── LoginPage.qml # Login screen
-│ └── Main.qml # App entry point
-├── clickable.yaml # Clickable config (Ubuntu Touch build)
-├── CMakeLists.txt # Build configuration
-├── manifest.json.in # Manifest template
-├── openedx.desktop.in # Desktop entry
-├── openedx.apparmor # Security/AppArmor profile
-├── LICENSE # License file
-└── README.md # Project documentation
+── assets/ # Logos and images
+── build/ # Auto-generated build files (ignored in repo)
+── po/ # Localization files
+── qml/ # UI components and logic
+   |── components/ # Reusable QML components (CourseCard, CourseList, etc.)
+   |── js/ # API, authentication, and storage scripts
+   ├── LoginPage.qml # Login screen
+   └── Main.qml # App entry point
+── clickable.yaml # Clickable config (Ubuntu Touch build)
+── CMakeLists.txt # Build configuration
+── manifest.json.in # Manifest template
+── openedx.desktop.in # Desktop entry
+── openedx.apparmor # Security/AppArmor profile
+── LICENSE # License file
+── README.md # Project documentation
