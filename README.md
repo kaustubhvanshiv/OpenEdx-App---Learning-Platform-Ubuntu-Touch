@@ -92,18 +92,19 @@ Dr. Prof. Ishwari Raskar**
 
 *Project Folder Structure:*
 
-── assets/ # Logos and images
-── build/ # Auto-generated build files (ignored in repo)
-── po/ # Localization files
-── qml/ # UI components and logic
-   |── components/ # Reusable QML components (CourseCard, CourseList, etc.)
-   |── js/ # API, authentication, and storage scripts
-   ├── LoginPage.qml # Login screen
-   └── Main.qml # App entry point
-── clickable.yaml # Clickable config (Ubuntu Touch build)
-── CMakeLists.txt # Build configuration
-── manifest.json.in # Manifest template
-── openedx.desktop.in # Desktop entry
-── openedx.apparmor # Security/AppArmor profile
-── LICENSE # License file
-── README.md # Project documentation
+- assets/ # Logos and images
+- build/ # Auto-generated build files (ignored in repo)
+- po/ # Localization files
+- qml/ # UI components and logic
+  
+- |--- components/ # Reusable QML components (CourseCard, CourseList, etc.)
+- |--- js/ # API, authentication, and storage scripts
+- |--- LoginPage.qml # Login screen
+- |--- Main.qml # App entry point
+-  clickable.yaml # Clickable config (Ubuntu Touch build)
+- MakeLists.txt # Build configuration
+- manifest.json.in # Manifest template
+- openedx.desktop.in # Desktop entry
+- openedx.apparmor # Security/AppArmor profile
+- LICENSE # License file
+- README.md # Project documentation
