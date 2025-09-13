@@ -91,96 +91,18 @@ Dr. Prof. Ishwari Raskar**
 
 *Project Folder Structure:*
 
-├── assets
-│   ├── logo.svg
-│   ├── official_logo.svg
-│   └── openedx_logo.png
-├── build
-│   └── all
-│       └── app
-│           ├── CMakeCache.txt
-│           ├── CMakeFiles
-│           │   ├── 3.22.3
-│           │   │   ├── CMakeCCompiler.cmake
-│           │   │   ├── CMakeCXXCompiler.cmake
-│           │   │   ├── CMakeDetermineCompilerABI_C.bin
-│           │   │   ├── CMakeDetermineCompilerABI_CXX.bin
-│           │   │   ├── CMakeSystem.cmake
-│           │   │   ├── CompilerIdC
-│           │   │   │   ├── a.out
-│           │   │   │   ├── CMakeCCompilerId.c
-│           │   │   │   └── tmp
-│           │   │   └── CompilerIdCXX
-│           │   │       ├── a.out
-│           │   │       ├── CMakeCXXCompilerId.cpp
-│           │   │       └── tmp
-│           │   ├── cmake.check_cache
-│           │   ├── CMakeDirectoryInformation.cmake
-│           │   ├── CMakeOutput.log
-│           │   ├── CMakeRuleHashes.txt
-│           │   ├── CMakeTmp
-│           │   ├── Makefile2
-│           │   ├── Makefile.cmake
-│           │   ├── openedx.desktop.dir
-│           │   │   ├── build.make
-│           │   │   ├── cmake_clean.cmake
-│           │   │   ├── compiler_depend.make
-│           │   │   ├── compiler_depend.ts
-│           │   │   ├── DependInfo.cmake
-│           │   │   └── progress.make
-│           │   ├── openedx_FILES.dir
-│           │   │   ├── build.make
-│           │   │   ├── cmake_clean.cmake
-│           │   │   ├── compiler_depend.make
-│           │   │   ├── compiler_depend.ts
-│           │   │   ├── DependInfo.cmake
-│           │   │   └── progress.make
-│           │   ├── progress.marks
-│           │   └── TargetDirectories.txt
-│           ├── cmake_install.cmake
-│           ├── install
-│           ├── install_manifest.txt
-│           ├── Makefile
-│           ├── manifest.json
-│           ├── openedx.desktop
-│           └── po
-│               ├── CMakeFiles
-│               │   ├── CMakeDirectoryInformation.cmake
-│               │   ├── openedx.com.kaustubh.pot.dir
-│               │   │   ├── build.make
-│               │   │   ├── cmake_clean.cmake
-│               │   │   ├── compiler_depend.make
-│               │   │   ├── compiler_depend.ts
-│               │   │   ├── DependInfo.cmake
-│               │   │   └── progress.make
-│               │   └── progress.marks
-│               ├── cmake_install.cmake
-│               ├── Makefile
-│               ├── openedx.com.kaustubh.pot
-│               └── openedx.desktop.in.h
-├── clickable.yaml
-├── CMakeLists.txt
-├── LICENSE
-├── manifest.json.in
-├── openedx.apparmor
-├── openedx.desktop.in
-├── po
-│   ├── CMakeLists.txt
-│   └── openedx.com.kaustubh.pot
-├── qml
-│   ├── components
-│   │   ├── CourseCard.qml
-│   │   ├── CourseList.qml
-│   │   ├── CoursePage.qml
-│   │   ├── DownloadsPage.qml
-│   │   ├── quizDelegate.qml
-│   │   ├── sectionDelegate.qml
-│   │   └── SettingsPage.qml
-│   ├── js
-│   │   ├── api.js
-│   │   ├── auth.js
-│   │   └── storage.js
-│   ├── Loginpage.qml
-│   ├── Main.qml
-│   └── Main.qml.autosave
-└── README.md
+├── assets/ # Logos and images
+├── build/ # Auto-generated build files (ignored in repo)
+├── po/ # Localization files
+├── qml/ # UI components and logic
+│ ├── components/ # Reusable QML components (CourseCard, CourseList, etc.)
+│ ├── js/ # API, authentication, and storage scripts
+│ ├── LoginPage.qml # Login screen
+│ └── Main.qml # App entry point
+├── clickable.yaml # Clickable config (Ubuntu Touch build)
+├── CMakeLists.txt # Build configuration
+├── manifest.json.in # Manifest template
+├── openedx.desktop.in # Desktop entry
+├── openedx.apparmor # Security/AppArmor profile
+├── LICENSE # License file
+└── README.md # Project documentation
