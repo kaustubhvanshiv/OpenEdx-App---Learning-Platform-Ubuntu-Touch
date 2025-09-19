@@ -59,15 +59,57 @@ Build a mobile app that provides a seamless learning experience on Ubuntu Touch/
 - Test instance of Open edX (https://courses.edx.org/)).  
 
 ### Steps  
-1. Clone this repository:  
-   ```bash
-   git clone https://github.com/kaustubhvanshiv/OpenEdx-App---Learning-Platform-Ubuntu-Touch-
-   cd openedx-on-the-go
+1. Overview
+Clickable is a tool to help build, package, and deploy Ubuntu Touch apps from your desktop (or dev machine) to Ubuntu Touch devices. (Clickable)
 
-2. Build and install for Ubuntu Touch:
-   clickable
+Prerequisites
+A Linux system (Ubuntu is typical) or a VM if you're on Windows/macOS.
+An Ubuntu Touch device (or emulator) connected with USB or reachable over SSH. Developer mode enabled.
+Install ADB if you want to deploy over USB.
 
-3. Launch the app from your device/emulator.
+*Step-by-step Instructions:*
+ Open a terminal, and run:
+
+sudo apt update
+sudo apt install docker.io adb git python3 python3-pip python3-setuptools
+
+This installs Docker (needed for building), ADB (for deploying), Git, Python tools, etc. (GitLab)
+
+
+Install Clickable:
+ pip3 install --user clickable-ut
+
+This installs the Clickable Python package. (GitLab)
+
+
+Add Clickable to your PATH
+To run it easily without typing full path, add the user-local bin folder to PATH. For example:
+
+echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc
+source ~/.bashrc
+
+Then verify with:
+ clickable --version
+
+*Initial setup*
+
+Optional but recommended:
+ clickable setup
+This sets up bash completion and Docker permissions etc. (GitLab)
+
+
+2. Download the zip file of the code.
+   
+3. Open the terminal and go to the folder using:
+   cd ~/openedx.
+   
+4. Now that we are insdie our openedx folder we have to run a command that allows the local root user to connect to your X server so root can open GUI applications on your display.
+   xhost +local:root
+   
+5. Now to run the app you have to type command:
+   clickable desktop
+
+6. Now you can see the app interface!! Hurray!!
 
 🧩 Technical Decisions
 
