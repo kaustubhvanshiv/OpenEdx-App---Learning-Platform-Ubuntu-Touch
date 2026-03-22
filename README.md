@@ -1,3 +1,8 @@
+![Status](https://img.shields.io/badge/status-in%20development-yellow)
+![Platform](https://img.shields.io/badge/platform-Ubuntu%20Touch-blue)
+![Tech](https://img.shields.io/badge/tech-QML%20%2B%20JS-green)
+![License](https://img.shields.io/badge/license-MIT-orange)
+
 # Open edX on the Go: A Mobile Learning App for Ubuntu Touch/Lomiri  
 
 Our project brings the **Open edX learning platform** to **Ubuntu Touch (Clickable)** and **Lomiri (Snap)**.  
@@ -162,7 +167,32 @@ Both toolkits provide responsive, native-style UI components suitable for Lomiri
 ## 🌍 Why This Matters
 This app bridges the gap between open education and open-source mobile platforms, giving Ubuntu Touch/Lomiri users the power to learn anytime, anywhere. It extends Open edX’s mission of democratizing education while showcasing how open-source tools can empower both developers and learners.
 
-## 👥 Developer
+## 👥 Contributor
 - [Kaustubh Vanshiv] 
 
-Open Source Community
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch (`feature/your-feature`)
+3. Commit your changes
+4. Push and open a Pull Request
+
+Please ensure your code follows the existing structure and naming conventions.
+---
+## 📜 License
+
+This project is licensed under the GNU GPL v3 License.
+---
+
+## ⚠️ Known Issues
+
+- API integration is incomplete
+- Authentication flow is not connected
+- Data is currently mocked
+- Video playback not implemented yet
+
+---
