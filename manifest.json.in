@@ -1,0 +1,15 @@
+{
+    "name": "openedx.com.kaustubh",
+    "description": "A sample Ubuntu Touch app for browsing and streaming courses.",
+    "architecture": "@CLICK_ARCH@",
+    "title": "OpenEdx",
+    "hooks": {
+        "openedx": {
+            "apparmor": "openedx.apparmor",
+            "desktop":  "openedx.desktop"
+        }
+    },
+    "version": "@BUILD_VERSION@",
+    "maintainer": "Kaustubh Vrushal Vanshiv <kaustubhvanshiv@gmail.com>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

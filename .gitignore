@@ -1,0 +1,26 @@
+# Build artifacts
+build/
+.clickable/
+
+# Clickable packages
+*.click
+*.tar.xz
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python (if used later)
+__pycache__/
+*.pyc
+
+# Qt Creator
+*.pro.user
+*.user
+CMakeLists.txt.user
+
+# Temporary files
+*~
