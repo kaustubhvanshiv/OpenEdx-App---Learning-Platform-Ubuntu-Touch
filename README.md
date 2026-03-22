@@ -17,13 +17,58 @@ Build a mobile app that provides a seamless learning experience on Ubuntu Touch/
 
 ---
 
-## ✨ Features  (Planned)
-- **Course Browsing**: Discover courses by category, popularity, or keyword search.  
-- **Enrollment**: Enroll in Open edX courses and manage your list.  
-- **Content Viewing**: Access video lectures, text-based materials, and quizzes.  
-- **Offline Support**: Download videos/materials for offline use.  
-- **User Authentication**: Secure login with Open edX credentials.  
-- **Progress Sync**: Automatically sync progress with the Open edX server.  
+## ⚠️ Current Status
+
+This project is currently under development.
+
+- UI and navigation are implemented
+- API integration is partially implemented
+- Authentication is not fully connected
+- Course data is currently mocked
+- Video and quiz functionality are not integrated yet
+
+---
+
+## ✨ Features
+
+### Core Features
+
+- [x] UI & Navigation (StackView, pages)
+- [x] Course browsing UI (static data)
+- [x] Basic quiz UI
+- [x] Profile & settings UI
+
+### Backend & Integration
+
+- [ ] Open edX API integration
+- [ ] Real course fetching
+- [ ] Enrollment system
+- [ ] Progress tracking (server sync)
+
+### Authentication
+
+- [ ] Login with Open edX credentials
+- [ ] Token handling & session management
+
+### Learning Features
+
+- [ ] Video playback (streaming)
+- [ ] Quiz submission to backend
+- [ ] Course content rendering
+
+### Offline Features
+
+- [ ] Local storage (SQLite)
+- [ ] Offline course access
+- [ ] Sync when back online
+
+### Bonus Features
+
+- [ ] Push notifications
+- [ ] Dark mode improvements
+- [ ] Multiple Open edX instances
+
+---
 
 **Bonus (Optional):**  
 - Push notifications for course updates.  
@@ -57,10 +102,6 @@ Build a mobile app that provides a seamless learning experience on Ubuntu Touch/
 - Ubuntu Touch SDK or Lomiri development tools.  
 - [Clickable](https://clickable-ut.dev/en/latest/) installed for Ubuntu Touch builds.  
 - Test instance of Open edX (https://courses.edx.org/)).  
-
-### Steps  
-
-This sets up bash completion and Docker permissions etc. (GitLab)
 
 
 ### Steps
@@ -98,29 +139,30 @@ clickable build
 clickable desktop
 ```
 
-6. Now you can see the app interface!! Hurray!!
+6. The application should now launch successfully.
 
-## ⚠️ Current Status
+---
 
-This project is currently under development.
+## 🧪 Debugging Tips
 
-- UI and navigation are implemented
-- API integration is partially implemented
-- Authentication is not fully connected
-- Course data is currently mocked
-- Video and quiz functionality are not integrated yet
+- Use console.log() for debugging JS
+- Check terminal logs for QML errors
+- If build fails:
+  rm -rf build
 
-🧩 Technical Decisions
+---
+
+## 🧩 Technical Decisions
 
 - Why JavaScript for API calls?
 QML integrates smoothly with JavaScript, allowing direct interaction with REST APIs without requiring Python bindings.
 - Why QQC2/Kirigami?
 Both toolkits provide responsive, native-style UI components suitable for Lomiri and Ubuntu Touch.
 
-🌍 Why This Matters
+## 🌍 Why This Matters
 This app bridges the gap between open education and open-source mobile platforms, giving Ubuntu Touch/Lomiri users the power to learn anytime, anywhere. It extends Open edX’s mission of democratizing education while showcasing how open-source tools can empower both developers and learners.
 
-👥 Developer
+## 👥 Developer
 - [Kaustubh Vanshiv] 
 
 Open Source Community
